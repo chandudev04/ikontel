@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form class="event.preventDefault(); validate();">
+        <label>Mobile Number: </label><input type="number" id="my-input" placeholder="91#######" value="">
+        <input type="submit" value="submit">
+      </form>
+      <script>
+        function validate() {
+          const myInput = document.querySelector('#my-input');
+          if(myInput.value.length != 10) {
+            alert('10 digit mobile number is required');
+          }
+        }
+      </script>
+</body>
+</html>
